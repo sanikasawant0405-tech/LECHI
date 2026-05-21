@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LECHI Research | Bajaj General Claim Legal</title>
+    <link rel="stylesheet" href="./ClaimsLegalWorkbench.css">
+</head>
+<body class="research-page">
+    <main class="research-tab-shell">
+        <header class="research-tab-header">
+            <div>
+                <span class="eyebrow">LECHI Research</span>
+                <h1>Legal Judgement Research</h1>
+                <p>Fill the research questions below. LECHI will research on the subject line and prepare a judgement summary for the Claim Legal Department.</p>
+            </div>
+            <a class="ghost-link" href="./ClaimsLegalWorkbench.html">Back to LECHI Dashboard</a>
+        </header>
+
+        <section class="research-tab-grid">
+            <form class="research-form" id="researchForm">
+                <label for="researchSubject">Subject</label>
+                <select id="researchSubject">
+                    <option>Driving License</option>
+                    <option>Fake driving licence defence</option>
+                    <option>Delay in claim intimation</option>
+                    <option>Quantum challenge in MACT</option>
+                    <option>Breach of policy condition</option>
+                    <option>Recovery rights after award payment</option>
+                </select>
+
+                <label for="relevantJudgements">Relevant Judgements</label>
+                <select id="relevantJudgements">
+                    <option>Supreme Court and High Court judgements</option>
+                    <option>Supreme Court only</option>
+                    <option>High Court only</option>
+                    <option>Consumer Commission judgements</option>
+                </select>
+
+                <label for="insuranceSide">In favor of Insurance / Against Insurance</label>
+                <select id="insuranceSide">
+                    <option>In favor of Insurance</option>
+                    <option>Against Insurance</option>
+                    <option>Mixed view</option>
+                </select>
+
+                <label for="caseTitle">Case title</label>
+                <input id="caseTitle" type="text" value="Insurer recovery rights in fake licence motor claim">
+
+                <label for="judgementGist">Gist of the Judgement</label>
+                <textarea id="judgementGist">Insurer can defend breach of policy condition where licence verification, insured knowledge, and wilful breach are supported by evidence.</textarea>
+
+                <button class="primary-button" type="submit">Research Subject Line</button>
+            </form>
+
+            <article class="research-result" id="researchResult">
+                <span class="eyebrow">BOT research output</span>
+                <h3>Ready for research</h3>
+                <p>After you answer the questions, LECHI will generate research based on the subject line, judgement relevance, insurance-side result, case title, and judgement gist.</p>
+            </article>
+        </section>
+    </main>
+
+    <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+    <script src="./LECHIResearch.js"></script>
+</body>
+</html>

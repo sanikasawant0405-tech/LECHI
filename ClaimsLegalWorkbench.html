@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LECHI | Bajaj General Claim Legal AI</title>
+    <link rel="stylesheet" href="./ClaimsLegalWorkbench.css">
+</head>
+<body>
+    <aside class="lechi-sidebar" aria-label="LECHI navigation">
+        <div class="brand">
+            <span class="brand-mark">L</span>
+            <div>
+                <strong>LECHI</strong>
+                <span>Bajaj General | Claim Legal</span>
+            </div>
+        </div>
+
+        <nav class="nav-list">
+            <a class="is-active" href="#chat">AI Chat</a>
+            <a href="#liveContext">Weather & Traffic</a>
+            <a href="#dashboardPanel">Dynamic Dashboard</a>
+            <a href="#dashboardPanel" data-command="What is my dashboard today?">Show Dashboard</a>
+            <a href="#dashboardPanel" data-command="How many compromise cases are in my bucket?">Compromise Bucket</a>
+            <a href="#researchPanel" data-open-research>Research</a>
+            <a href="#whatsappWorkflow">Advocate Alerts</a>
+        </nav>
+
+        <div class="sidebar-card">
+            <span>Enterprise AI</span>
+            <strong>Demo Prototype</strong>
+            <p>Conversational legal operations assistant with sample claim, court, advocate, and settlement data.</p>
+        </div>
+    </aside>
+
+    <main class="lechi-app">
+        <header class="app-header">
+            <div>
+                <span class="eyebrow">Enterprise conversational AI platform</span>
+                <h1>LECHI for Bajaj General - Claim Legal Department</h1>
+                <p>Ask for dashboards, compromise buckets, court analytics, settlement exposure, and advocate alerts from one premium blue workspace.</p>
+            </div>
+        </header>
+
+        <section class="workspace">
+            <section class="chat-shell" id="chat" aria-label="LECHI chat">
+                <div class="chat-topline">
+                    <div>
+                        <span class="eyebrow">Main interface</span>
+                        <h2>Ask LECHI anything</h2>
+                    </div>
+                    <span class="status-pill">Secure demo mode</span>
+                </div>
+
+                <div class="chat-window" id="chatWindow" aria-live="polite">
+                    <div class="message bot">
+                        <strong>LECHI</strong>
+                        <p>Good morning. I am ready for your claim legal dashboard, compromise analysis, court-wise analytics, settlement exposure, and advocate alert workflow.</p>
+                    </div>
+                    <div class="message bot">
+                        <strong>LECHI</strong>
+                        <p>Try asking: "What is my dashboard today?" or "How many compromise cases are in my bucket?"</p>
+                    </div>
+                </div>
+
+                <form class="command-bar" id="commandForm">
+                    <input id="commandInput" type="text" value="What is my dashboard today?" aria-label="Ask LECHI">
+                    <button type="submit">Ask</button>
+                </form>
+
+                <div class="prompt-row" aria-label="Suggested prompts">
+                    <button type="button" data-command="What is my dashboard today?">Today's dashboard</button>
+                    <button type="button" data-command="How many compromise cases are in my bucket?">Compromise cases</button>
+                    <button type="button" data-command="Show court-wise analytics">Court analytics</button>
+                    <button type="button" data-command="Prepare advocate alert workflow">Advocate alerts</button>
+                </div>
+            </section>
+
+            <aside class="context-rail" id="liveContext" aria-label="Live context widgets">
+                <article class="widget weather-widget">
+                    <div>
+                        <span class="eyebrow">Weather</span>
+                        <h3>Mumbai Legal Hub</h3>
+                    </div>
+                    <strong>31 C</strong>
+                    <p>Humid, light cloud cover. Outdoor document movement risk is low.</p>
+                    <div class="mini-metrics">
+                        <span>Rain 12%</span>
+                        <span>Humidity 68%</span>
+                    </div>
+                </article>
+
+                <article class="widget traffic-widget">
+                    <div>
+                        <span class="eyebrow">Traffic</span>
+                        <h3>Court travel watch</h3>
+                    </div>
+                    <strong>42 min</strong>
+                    <p>Fort to MACT Mumbai. Moderate delay near Eastern Freeway.</p>
+                    <div class="route-line"><i style="width: 68%"></i></div>
+                    <div class="mini-metrics">
+                        <span>Delay +11 min</span>
+                        <span>Risk Medium</span>
+                    </div>
+                </article>
+
+                <article class="widget">
+                    <span class="eyebrow">Legal data sync</span>
+                    <h3>Sample backend feed</h3>
+                    <ul class="sync-list">
+                        <li>2,148 open legal claims</li>
+                        <li>18 panel advocates active</li>
+                        <li>76 compromise-fit matters</li>
+                    </ul>
+                </article>
+            </aside>
+        </section>
+
+        <section class="dynamic-dashboard is-hidden" id="dashboardPanel" aria-live="polite">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">Dynamic dashboard</span>
+                    <h2>Today's claim legal command view</h2>
+                </div>
+                <div class="section-actions">
+                    <span class="refresh-chip">Rendered by LECHI</span>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <article class="stat-card">
+                    <span>Cases on board today</span>
+                    <strong>126</strong>
+                    <p>42 hearings, 31 evidence reviews, 53 follow-ups</p>
+                </article>
+                <article class="stat-card">
+                    <span>Compromisable cases</span>
+                    <strong>76</strong>
+                    <p>Estimated settlement opportunity this cycle</p>
+                </article>
+                <article class="stat-card">
+                    <span>Settlement amount</span>
+                    <strong>Rs. 8.72 Cr</strong>
+                    <p>Recommended negotiation reserve</p>
+                </article>
+                <article class="stat-card">
+                    <span>Advocate alerts</span>
+                    <strong>18</strong>
+                    <p>Panel advocates mapped to compromise matters</p>
+                </article>
+            </div>
+
+            <div class="analytics-grid">
+                <article class="panel-card">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="eyebrow">Court-wise analytics</span>
+                            <h3>Open cases by court</h3>
+                        </div>
+                    </div>
+                    <div class="bar-chart">
+                        <div><span>Mumbai MACT</span><i style="width: 88%"></i><strong>54</strong></div>
+                        <div><span>Pune MACT</span><i style="width: 72%"></i><strong>44</strong></div>
+                        <div><span>Nashik MACT</span><i style="width: 48%"></i><strong>29</strong></div>
+                        <div><span>Nagpur MACT</span><i style="width: 38%"></i><strong>23</strong></div>
+                        <div><span>Ahmedabad</span><i style="width: 31%"></i><strong>19</strong></div>
+                    </div>
+                </article>
+
+                <article class="panel-card">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="eyebrow">Compromise bucket</span>
+                            <h3>Decision split</h3>
+                        </div>
+                    </div>
+                    <div class="donut-wrap">
+                        <div class="donut-chart"><span>76</span></div>
+                        <div class="legend-list">
+                            <p><i class="dot high"></i> 32 high-fit matters</p>
+                            <p><i class="dot medium"></i> 28 medium-fit matters</p>
+                            <p><i class="dot low"></i> 16 review-first matters</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="panel-card span-2">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="eyebrow">Sample legal data</span>
+                            <h3>Priority compromise candidates</h3>
+                        </div>
+                    </div>
+                    <div class="case-table">
+                        <div class="table-row table-head">
+                            <span>Claim</span><span>Court</span><span>Advocate</span><span>Exposure</span><span>Fit</span>
+                        </div>
+                        <div class="table-row">
+                            <span>CLM-24-7812</span><span>Pune MACT</span><span>Adv. Meera Rao</span><span>Rs. 18.4L</span><strong>High</strong>
+                        </div>
+                        <div class="table-row">
+                            <span>CLM-24-5520</span><span>Mumbai MACT</span><span>Adv. Iqbal Khan</span><span>Rs. 11.8L</span><strong>Medium</strong>
+                        </div>
+                        <div class="table-row">
+                            <span>CLM-25-0884</span><span>Nashik MACT</span><span>Adv. Priya Nair</span><span>Rs. 9.6L</span><strong>High</strong>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="whatsapp-workflow is-hidden" id="whatsappWorkflow" aria-live="polite">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">WhatsApp Business workflow</span>
+                    <h2>Advocate-wise compromise alerts</h2>
+                </div>
+                <span class="refresh-chip">Simulated dispatch</span>
+            </div>
+            <div class="workflow-grid">
+                <article class="workflow-card is-sent">
+                    <strong>Adv. Meera Rao</strong>
+                    <p>22 claims | Pune and Mumbai MACT | High compromise potential</p>
+                    <span>WhatsApp alert sent</span>
+                </article>
+                <article class="workflow-card is-sent">
+                    <strong>Adv. Iqbal Khan</strong>
+                    <p>18 claims | Mumbai MACT | Settlement note requested</p>
+                    <span>WhatsApp alert sent</span>
+                </article>
+                <article class="workflow-card is-sent">
+                    <strong>Adv. Priya Nair</strong>
+                    <p>14 claims | Nashik MACT | Next hearing risk mapped</p>
+                    <span>WhatsApp alert sent</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="research-panel is-hidden" id="researchPanel" aria-live="polite">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">Research workspace</span>
+                    <h2>Legal judgement research tab</h2>
+                </div>
+                <div class="section-actions">
+                    <span class="refresh-chip">Opened by LECHI</span>
+                </div>
+            </div>
+
+            <div class="research-grid">
+                <form class="research-form" id="researchForm">
+                    <label for="researchSubject">Subject</label>
+                    <select id="researchSubject">
+                        <option>Fake driving licence defence</option>
+                        <option>Delay in claim intimation</option>
+                        <option>Quantum challenge in MACT</option>
+                        <option>Breach of policy condition</option>
+                        <option>Recovery rights after award payment</option>
+                    </select>
+
+                    <label for="relevantJudgements">Relevant Judgements</label>
+                    <select id="relevantJudgements">
+                        <option>Supreme Court and High Court judgements</option>
+                        <option>Supreme Court only</option>
+                        <option>High Court only</option>
+                        <option>Consumer Commission judgements</option>
+                    </select>
+
+                    <label for="insuranceSide">In favor of Insurance / Against Insurance</label>
+                    <select id="insuranceSide">
+                        <option>In favor of Insurance</option>
+                        <option>Against Insurance</option>
+                        <option>Mixed view</option>
+                    </select>
+
+                    <label for="caseTitle">Case title</label>
+                    <input id="caseTitle" type="text" value="Insurer recovery rights in fake licence motor claim">
+
+                    <label for="judgementGist">Gist of the Judgement</label>
+                    <textarea id="judgementGist">Insurer can defend breach of policy condition where licence verification, insured knowledge, and wilful breach are supported by evidence.</textarea>
+
+                    <button class="primary-button" type="submit">Research Subject Line</button>
+                </form>
+
+                <article class="research-result" id="researchResult">
+                    <span class="eyebrow">AI research output</span>
+                    <h3>Research result will appear here</h3>
+                    <p>LECHI will use the selected subject, judgement relevance, insurance side, case title, and judgement gist to prepare a legal research summary.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+
+    <script src="./ClaimsLegalWorkbench.js"></script>
+</body>
+</html>
